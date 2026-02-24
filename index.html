@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Consignado Benefício</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="lang-switcher">
+        <select id="langSelect" class="form-select lang-select">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+        </select>
+    </div>
+
+    <header class="page-header">
+        <img src="logo-gallupi.png" alt="Gallupi Logo" class="logo-header">
+    </header>
+
+    <div class="main-bg">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">Gallupi<br>Strength</h1>
+                <p class="hero-subtitle" id="heroSubtitle">Sua jornada para a máxima performance começa aqui. Preencha
+                    sua anamnese com atenção para desenharmos o plano perfeito para você.</p>
+            </div>
+            <div class="hero-img-container">
+                <img src="instrutor-gallupi.png" alt="Coach Gallupi" class="hero-img">
+            </div>
+        </div>
+
+        <div class="form-card">
+
+            <h2 class="main-title">Anamnese Física</h2>
+
+            <form id="anamneseForm">
+                <!-- Sessão 1: Atividade e Objetivos -->
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h4 class="section-title">Objetivos e Perfil</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Idade:</label>
+                            <input type="number" name="age" class="form-control" placeholder="Anos">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Peso (kg):</label>
+                            <input type="number" name="weight" class="form-control" placeholder="00.0">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Altura (cm):</label>
+                            <input type="number" name="height" class="form-control" placeholder="000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Endereço:</label>
+                        <input type="text" name="address" class="form-control">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Medida do Tórax:</label>
+                            <input type="text" name="chest" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Quando começou a treinar?</label>
+                            <input type="text" name="startTraining" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pratica exercícios? Há quanto tempo?</label>
+                        <input type="text" name="exerciseDuration" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Se não, há quanto tempo está parado?</label>
+                        <input type="text" name="noExerciseDuration" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Qual seu objetivo principal (Foco)?</label>
+                        <input type="text" name="objective" class="form-control"
+                            placeholder="Ex: Hipertrofia, Queima de Gordura...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Atividades físicas ou esportes favoritos?</label>
+                        <input type="text" name="favoriteSports" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Sessão 2: Fatores de Risco e Saúde -->
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h4 class="section-title">Saúde e Fatores de Risco</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Fatores de risco:</label>
+                            <input type="text" name="riskFactors" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Você fuma?</label>
+                            <input type="text" name="smoke" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Condição respiratória?</label>
+                            <input type="text" name="respiratory" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Alergias?</label>
+                            <input type="text" name="allergy" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hipertensão? (Histórico familiar):</label>
+                        <input type="text" name="hypertension" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Diabetes? Qual tipo?</label>
+                        <input type="text" name="diabetes" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Condições Ósseas/Articulares/Musculares:</label>
+                        <input type="text" name="boneJointMuscle" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Posso ver o relatório médico? (Se houver):</label>
+                        <input type="text" name="doctorReport" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Possui alguma lesão?</label>
+                        <input type="text" name="injury" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Faz uso de alguma medicação?</label>
+                        <input type="text" name="medication" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Algo mais que eu precise saber?</label>
+                        <input type="text" name="needToKnow" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Já passou por alguma cirurgia?</label>
+                        <input type="text" name="surgery" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Sessão 3: Estilo de Vida e Nutrição -->
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h4 class="section-title">Estilo de Vida e Nutrição</h4>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Horário de dormir / acordar:</label>
+                        <input type="text" name="sleepWake" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Usa algum suplemento?</label>
+                        <input type="text" name="supplement" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quantas refeições faz por dia?</label>
+                        <input type="number" name="meals" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quais refeições você costuma fazer?</label>
+                        <div class="meals-grid">
+                            <label class="meal-item">
+                                <input type="checkbox" name="breakfast" id="breakfast"> Café da Manhã
+                            </label>
+                            <label class="meal-item">
+                                <input type="checkbox" name="snack1" id="snack1"> Lanche 1
+                            </label>
+                            <label class="meal-item">
+                                <input type="checkbox" name="lunch" id="lunch"> Almoço
+                            </label>
+                            <label class="meal-item">
+                                <input type="checkbox" name="snack2" id="snack2"> Lanche 2
+                            </label>
+                            <label class="meal-item">
+                                <input type="checkbox" name="dinner" id="dinner"> Jantar
+                            </label>
+                            <label class="meal-item">
+                                <input type="checkbox" name="supper" id="supper"> Ceia
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-4">
+                        <label>Descrição de um dia típico:</label>
+                        <textarea name="typicalDay" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Detalhes (Café da Manhã):</label>
+                        <input type="text" name="breakfastDesc" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Detalhes (Almoço):</label>
+                        <input type="text" name="lunchDesc" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Detalhes (Lanche 2):</label>
+                        <input type="text" name="snack2Desc" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Detalhes (Jantar):</label>
+                        <input type="text" name="dinnerDesc" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Características da rotina regular:</label>
+                        <input type="text" name="routine" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button id="whatsappBtn" type="button" class="send-btn">Enviar via WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Inputmask JS -->
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
