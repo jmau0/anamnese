@@ -72,6 +72,7 @@ body {
     margin-bottom: 20px;
     background: linear-gradient(to right, #ffffff, #888);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -212,6 +213,7 @@ label {
 
 .form-control:focus {
     background: #222;
+    color: var(--text-primary);
     border-color: var(--accent-color);
     box-shadow: 0 0 0 4px rgba(182, 255, 0, 0.1);
     outline: none;
