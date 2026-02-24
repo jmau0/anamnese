@@ -1,7 +1,7 @@
 // Traduções das perguntas
 const translations = {
     pt: {
-        heroTitle: 'Gallupi<br>Strength',
+        heroTitle: 'Gallupi<br>S&C',
         heroSubtitle: 'Sua jornada para a máxima performance começa aqui. Preencha sua anamnese com atenção para desenharmos o plano perfeito para você.',
         'Anamnese Física': 'Anamnese Física',
         'Objetivos e Perfil': 'Objetivos e Perfil',
@@ -24,7 +24,7 @@ const translations = {
         'Descrição de um dia típico:': 'Descrição de um dia típico:', 'Detalhes (Café da Manhã):': 'Detalhes (Café da Manhã):', 'Detalhes (Almoço):': 'Detalhes (Almoço):', 'Detalhes (Lanche 2):': 'Detalhes (Lanche 2):', 'Detalhes (Jantar):': 'Detalhes (Jantar):', 'Características da rotina regular:': 'Características da rotina regular:'
     },
     en: {
-        heroTitle: 'Gallupi<br>Strength',
+        heroTitle: 'Gallupi<br>S&C',
         heroSubtitle: 'Your journey to maximum performance starts here. Fill out your anamnesis carefully so we can design the perfect plan for you.',
         'Anamnese Física': 'Physical Anamnesis',
         'Objetivos e Perfil': 'Objectives and Profile',
@@ -47,7 +47,7 @@ const translations = {
         'Descrição de um dia típico:': 'Typical Day Description:', 'Detalhes (Café da Manhã):': 'Details (Breakfast):', 'Detalhes (Almoço):': 'Details (Lunch):', 'Detalhes (Lanche 2):': 'Details (Snack 2):', 'Detalhes (Jantar):': 'Details (Dinner):', 'Características da rotina regular:': 'Regular routine characteristics:'
     },
     es: {
-        heroTitle: 'Gallupi<br>Strength',
+        heroTitle: 'Gallupi<br>S&C',
         heroSubtitle: 'Tu viaje hacia el máximo rendimiento comienza aquí. Completa tu anamnesis con cuidado para que podamos diseñar el plan perfecto para ti.',
         'Anamnese Física': 'Anamnesis Física',
         'Objetivos e Perfil': 'Objetivos y Perfil',
@@ -113,11 +113,11 @@ function translateForm(lang) {
     }
 }
 
-document.getElementById('langSelect').addEventListener('change', function() {
+document.getElementById('langSelect').addEventListener('change', function () {
     translateForm(this.value);
 });
 
-window.onload = function() {
+window.onload = function () {
     translateForm(document.getElementById('langSelect').value);
 };
 // Exemplo de uso do Inputmask
@@ -161,7 +161,7 @@ function montarWhatsapp() {
     window.open(url, '_blank');
 }
 
-document.getElementById('whatsappBtn').onclick = function(e) {
+document.getElementById('whatsappBtn').onclick = function (e) {
     e.preventDefault();
     montarWhatsapp();
 };
